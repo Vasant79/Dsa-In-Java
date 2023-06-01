@@ -1,0 +1,63 @@
+package SDESheetProblems;
+
+public class Pattern2 {
+
+    public static void pattern1() {
+
+        for (int i = 0; i < 5; i++) {
+
+            int N = 5;
+
+            // printing spaces
+            for (int j = 0; j < N - i - 1; j++) {
+                System.out.print(" ");
+            }
+
+            // printing *
+            for (int j = 0; j < 2 * i + 1; j++) {
+                System.out.print("*");
+            }
+
+            // printing spaces
+            for (int j = 0; j < N - i - 1; j++) {
+                System.out.print(" ");
+            }
+
+            System.out.println();
+
+        }
+    }
+
+    public static void pattern2() {
+
+        int N = 4;
+        for (int i = 0; i < N; i++) {
+            // printing spaces
+            for (int j = 0; j < i * 2; j++) {
+                System.out.print(" ");
+            }
+
+            // printing *
+            for (int j = 1; j < N * 2 - i; j++) {
+                System.out.print("*");
+            }
+
+            // printing space again
+            for (int j = 0; j < i * 2; j++) {
+                System.out.print(" ");
+            }
+
+            System.out.println();
+        }
+
+    }
+
+    public static void main(String[] args) {
+
+        Pattern2.pattern1();
+
+        System.out.println("New pattern : ");
+        Pattern2.pattern2();
+
+    }
+}
