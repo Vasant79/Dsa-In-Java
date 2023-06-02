@@ -102,6 +102,44 @@ public class Pattern2 {
         }
     }
 
+    public static void pattern4() {
+
+        int N = 4;
+        int n = N - 1;
+
+        // upper- half of dimond
+        for (int i = 0; i < N; i++) {
+
+            // printing *
+            for (int j = 0; j < i + 1; j++) {
+                System.out.print("*");
+            }
+
+            // printing space
+            for (int j = 0; j < N - (i + 1); j++) {
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
+
+        // lower- half of dimond
+        for (int i = 0; i < N; i++) {
+
+            // printing *
+            for (int j = 0; j < n - i; j++) {
+                System.out.print("*");
+            }
+
+            // printing space
+            for (int j = 0; j < i; j++) {
+                System.out.print(" ");
+            }
+
+            System.out.println();
+
+        }
+    }
+
     public static void main(String[] args) {
 
         System.out.println("New pattern : ");
@@ -112,6 +150,9 @@ public class Pattern2 {
 
         System.out.println("New pattern : ");
         Pattern2.pattern3();
+
+        System.out.println("New pattern : ");
+        Pattern2.pattern4();
 
     }
 }
