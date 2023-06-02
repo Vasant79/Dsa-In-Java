@@ -52,6 +52,56 @@ public class Pattern2 {
 
     }
 
+    /**
+     * 
+     */
+    public static void pattern3() {
+        int N = 4;
+
+        // 1st patter pyramid
+        for (int i = 0; i < N; i++) {
+
+            // printing space
+            for (int j = 0; j <= N - (i + 1); j++) {
+                System.out.print(" ");
+            }
+
+            // printing *
+            for (int j = 0; j < 2 * i + 1; j++) {
+                System.out.print("*");
+            }
+
+            // printing space
+            for (int j = 0; j <= N - (i + 1); j++) {
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
+
+        // second pyramid
+        for (int i = 0; i < N; i++) {
+
+            // printing space
+            for (int j = 0; j <= i; j++) {
+                System.out.print(" ");
+            }
+
+            // printing *
+            for (int j = 0; j < N * 2 - (2 * i + 1); j++) {
+                System.out.print("*");
+            }
+
+            // printing space
+
+            for (int j = 0; j <= i; j++) {
+                System.out.print(" ");
+            }
+
+            System.out.println();
+
+        }
+    }
+
     public static void main(String[] args) {
 
         System.out.println("New pattern : ");
@@ -59,6 +109,9 @@ public class Pattern2 {
 
         System.out.println("New pattern : ");
         Pattern2.pattern2();
+
+        System.out.println("New pattern : ");
+        Pattern2.pattern3();
 
     }
 }
