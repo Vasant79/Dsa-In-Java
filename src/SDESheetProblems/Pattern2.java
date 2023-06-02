@@ -33,17 +33,17 @@ public class Pattern2 {
         int N = 4;
         for (int i = 0; i < N; i++) {
             // printing spaces
-            for (int j = 0; j < i * 2; j++) {
+            for (int j = 0; j <= i; j++) {
                 System.out.print(" ");
             }
 
             // printing *
-            for (int j = 1; j < N * 2 - i; j++) {
+            for (int j = 0; j < N * 2 - (2 * i + 1); j++) {
                 System.out.print("*");
             }
 
             // printing space again
-            for (int j = 0; j < i * 2; j++) {
+            for (int j = 0; j <= i; j++) {
                 System.out.print(" ");
             }
 
@@ -54,6 +54,7 @@ public class Pattern2 {
 
     public static void main(String[] args) {
 
+        System.out.println("New pattern : ");
         Pattern2.pattern1();
 
         System.out.println("New pattern : ");
